@@ -89,21 +89,23 @@
               <div class="header__logo">
                 <div class="logo"><a class="logo__link" href="#"><img class="logo__img" src="images/logo.png"></a></div>
               </div>
-              <div class="header__menu">
-                <nav class="menu">
-                  <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
-                    <li class="menu__item menu__item--number"><a class="menu__link" href="#">Портфолио</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
-                    <li class="menu__item"><a class="menu__link menu__link--pink" href="#">Калькулятор</a></li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="header__callme">
-                <div class="callme"><a class="callme__tel" href="#">+7 (495) 123-67-90</a>
-                  <div class="callme__button">
-                    <button class="button button--callme">Заказать звонок</button>
+              <div class="header__col">
+                <div class="header__menu">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item"><a class="menu__link" href="#">Стоимость</a></li>
+                      <li class="menu__item menu__item--number"><a class="menu__link" href="#">Портфолио</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Отзывы</a></li>
+                      <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+                      <li class="menu__item"><a class="menu__link menu__link--pink" href="#">Калькулятор</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="header__callme">
+                  <div class="callme"><a class="callme__tel" href="#">+7 (495) 123-67-90</a>
+                    <div class="callme__button">
+                      <button class="button button--callme">Заказать звонок</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -115,6 +117,76 @@
               <div class="intro__description">
                  за <span class="pink">7-15 дней </span>без отселения: <span class="pink">5 часов </span>без туалета, <span class="pink">1 день </span>без ванной
                 выделенное подразделение из <span class="pink">32 мастеров</span>, <span class="pink">7 лет </span>специализации на санузлах
+              </div>
+            </div>
+            <div class="calculate-the-cost">
+              <div class="container">
+                <div class="calculate-the-cost__col">
+                  <div class="calculate-the-cost__title title">Рассчитать стоимость ремонта</div>
+                  <div class="calculate-the-cost__row">
+                    <ul class="calculate-the-cost__list">
+                      <li class="calculate-the-cost__item">
+                        <div class="calculate-the-cost__name">Какой у вас санузел?</div>
+                        <div class="calculate-the-cost__option">
+                          <div class="calculate-the-cost__border">Совмещенный</div>
+                          <div class="calculate-the-cost__icon"></div>
+                        </div>
+                      </li>
+                      <li class="calculate-the-cost__item">
+                        <div class="calculate-the-cost__name">Какой ремонт хотите?</div>
+                        <div class="calculate-the-cost__option">
+                          <div class="calculate-the-cost__border">Не знаю</div>
+                          <div class="calculate-the-cost__icon"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="calculate-the-cost__row">
+                    <ul class="calculate-the-cost__list">
+                      <li class="calculate-the-cost__item">
+                        <div class="calculate-the-cost__name">Размер санузла</div>
+                        <div class="calculate-the-cost__option">
+                          <input class="calculate-the-cost__input calculate-the-cost__border" type="text" placeholder="Ширина(м)">
+                          <div class="calculate-the-cost__x">X</div>
+                          <input class="calculate-the-cost__input calculate-the-cost__border" type="text" placeholder="Длина(м)">
+                        </div>
+                      </li>
+                      <li class="calculate-the-cost__item">
+                        <div class="calculate-the-cost__name calculate-the-cost__name--o">Материалы</div>
+                        <div class="calculate-the-cost__checkbox">
+                          <label class="calculate-the-cost__label">
+                            <input class="calculate-the-cost__check" type="checkbox" name="option" checked>
+                            <div class="calculate-the-cost__fake"></div>
+                            <div class="calculate-the-cost__subtitle">Нужны черновые</div>
+                          </label>
+                          <label class="calculate-the-cost__label">
+                            <input class="calculate-the-cost__check" type="checkbox" name="option">
+                            <div class="calculate-the-cost__fake"></div>
+                            <div class="calculate-the-cost__subtitle">Нужны чистовые</div>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="calculate-the-cost__col calculate-the-cost__col--another">
+                  <div class="calculate-the-cost__title title">
+                     Наш специалист перезвонит
+                    вам и поможет определить
+                    точную стоимость ремонта
+                  </div>
+                  <div class="calculate-the-cost__row">
+                    <div class="calculate-the-cost__icon calculate-the-cost__icon--name"></div>
+                    <input class="calculate-the-cost__border" type="text" placeholder="Имя">
+                  </div>
+                  <div class="calculate-the-cost__row">
+                    <div class="calculate-the-cost__icon calculate-the-cost__icon--tel"></div>
+                    <input class="calculate-the-cost__border" type="text" placeholder="Телефон">
+                  </div>
+                  <div class="calculate-the-cost__button">
+                    <button class="button button--default">Запросить стоимость</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -282,7 +354,7 @@
           <div class="container">
             <div class="how-we-rework__title title">Посмотрите, как мы отремонтировали 300+ ванных комнат </div>
             <div class="how-we-rework__slider slider">
-              <div class="slider__wrapper"><a class="slider__controlls slider__controlls--prev" href="#"></a>
+              <div class="slider__wrapper"><a class="slider__controlls slider__controlls--prev" href="#" data-vector="prev"></a>
                 <ul class="slider__list">
                   <li class="slider__item">
                     <div class="slider__avatar"><img class="slider__avatar-pic" src="images/price-for-work/1.png"></div>
@@ -316,7 +388,7 @@
                     </div>
                     <div class="slider__price">1 000 000 руб.</div>
                   </li>
-                </ul><a class="slider__controlls slider__controlls--next" href="#"></a>
+                </ul><a class="slider__controlls slider__controlls--next" href="#" data-vector="next"></a>
               </div>
             </div>
           </div>
@@ -342,11 +414,11 @@
                         <div class="slider__rating-number">4.78</div>
                         <div class="slider__rating-stars">
                           <ul class="slider__rating-stars_list">
-                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
+                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"></a></li>
+                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"></a></li>
+                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"></a></li>
+                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"></a></li>
+                            <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"></a></li>
                           </ul>
                         </div>
                       </div>
@@ -409,51 +481,6 @@
                 </ul><a class="slider__controlls slider__controlls--next" href="#"></a>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="answer-for-quest">
-          <div class="container">
-            <div class="answer-for-quest__title title">Вопрос-ответ</div>
-            <ul class="answer-for-quest__list">
-              <li class="answer-for-quest__content answer-for-quest__content--active content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info">
-                  Выезд инженера-сметчика для расчета точной стоимости ремонта
-                  и составление сметы совершенно бесплатны!
-                </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Как быстро нужно принять решение?</a>
-                <div class="answer-for-quest__info"></div>
-              </li>
-              <li class="answer-for-quest__content answer-for-quest__content--active content"><a class="content__title" href="#">Сколько длится ремонт санузла?</a>
-                <div class="answer-for-quest__info">
-                  Срок зависит от объема и сложности работ. Как правило ремонт
-                  с облицовкой стен ПВХ-панелями мы делаем за 1-3 дня, а кафельной
-                  плиткой от 4 до 14 дней. Точный срок работ назовет инженер-сметчик
-                  после инспекции вашего санузла. Заказать бесплатный вызов инженера.
-                </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Какие мастера у вас работают? </a>
-                <div class="answer-for-quest__info"></div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
-                <div class="answer-for-quest__info"> </div>
-              </li>
-            </ul>
           </div>
         </section>
         <section class="reviews">
@@ -477,11 +504,11 @@
                       <div class="slider__rating-number">4.78</div>
                       <div class="slider__rating-stars">
                         <ul class="slider__rating-stars_list">
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
                         </ul>
                       </div>
                     </div>
@@ -504,11 +531,11 @@
                       <div class="slider__rating-number">4.78</div>
                       <div class="slider__rating-stars">
                         <ul class="slider__rating-stars_list">
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
                         </ul>
                       </div>
                     </div>
@@ -531,11 +558,11 @@
                       <div class="slider__rating-number">4.78</div>
                       <div class="slider__rating-stars">
                         <ul class="slider__rating-stars_list">
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
-                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#">f</a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
+                          <li class="slider__rating-stars_item"><a class="slider__rating-stars_link" href="#"> </a></li>
                         </ul>
                       </div>
                     </div>
@@ -546,6 +573,46 @@
                 </ul><a class="slider__controlls slider__controlls--next" href="#"></a>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="answer-for-quest">
+          <div class="container">
+            <div class="answer-for-quest__title title">Вопрос-ответ</div>
+            <ul class="answer-for-quest__list">
+              <li class="answer-for-quest__content answer-for-quest__content--active content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info">
+                  Выезд инженера-сметчика для расчета точной стоимости ремонта
+                  и составление сметы совершенно бесплатны!
+                </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Как быстро нужно принять решение?</a>
+                <div class="answer-for-quest__info"></div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько длится ремонт санузла?</a>
+                <div class="answer-for-quest__info"></div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Какие мастера у вас работают? </a>
+                <div class="answer-for-quest__info"></div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+              <li class="answer-for-quest__content content"><a class="content__title" href="#">Сколько стоит выезд инженера для замера?</a>
+                <div class="answer-for-quest__info"> </div>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="contacts">
